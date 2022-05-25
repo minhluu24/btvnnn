@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 800px;
+    background-color: aquamarine;
+
+    .menu {
+        width: 100%;
+        height: 50px;
+        background-color: orangered;
+        display: flex;
+        justify-content: space-between;
+
+
+        .options {
+            display: flex;
+            line-height: 50px;
+
+            p {
+                margin-left: 200px;
+            }
+        }
+
+        .box1 {
+            margin: 13px 100px;
+            border-radius: 50px;
+
+            input {
+                width: 100%;
+                height: 30px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap; // bao bọc tất cả nội dung bên trong, tự động xuống hàng nếu vượt quá width của màn hình
+        background-color: rgb(0, 109, 128);
+
+
+
+        .card {
+            width: 200px;
+            height: 350px;
+            border: 1px solid;
+            margin: 30px;
+            border-radius: 10px;
+            background-color: white;
+
+
+
+
+            .hinhanh {
+                width: 170px;
+                height: 150px;
+                margin: 10px 14px;
+
+
+                img {
+                    width: 170px;
+                    height: 100%;
+                }
+            }
+
+            .name {
+                text-align: center;
+            }
+
+            .vnd {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                span {
+
+                    padding: 0 10px;
+
+
+                }
+            }
+
+
+        }
+
+        .card:hover {
+            transform: scale(1.2);
+            transition: 100ms;
+        }
+
+    }
+
+    .hihi {
+        position: fixed;
+        left: 80%;
+        top: 60 0px;
+        background-color: orange;
+        border: 5px double rgb(255, 0, 98);
+        border-radius: 60px;
+        height: 40px;
+        width: 15%;
+        text-align: center;
+        color: white;
+
+        a {
+            text-decoration: none;
+
+        }
+
+    }
+
+    .hihi:hover {
+        transform: scale(1.2);
+        transition: 500ms;
+        text-decoration: none;
+
+    }
+
+
+
+
+
+}
